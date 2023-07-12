@@ -62,5 +62,5 @@ export async function transactionRoutes(app: FastifyInstance){
     reply.code(200).send({summary})
   })
 
-  
+
 }

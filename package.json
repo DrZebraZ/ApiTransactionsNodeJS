@@ -1,8 +1,11 @@
 {
   "devDependencies": {
     "@types/node": "^20.4.1",
+    "@types/supertest": "^2.0.12",
+    "supertest": "^6.3.3",
     "tsx": "^3.12.7",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "vitest": "^0.33.0"
   },
   "dependencies": {
     "@fastify/cookie": "^8.3.0",
@@ -17,9 +20,9 @@
   "main": "index.js",
   "scripts": {
     "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex",
-    "prod": "npx tsc server.ts && node server.js",
-    "dev": "tsx watch src/server.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prod": "npx tsc server.ts && node main.js",
+    "dev": "tsx watch src/main.ts",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
